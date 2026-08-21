@@ -11,15 +11,24 @@ DATA_DIR = Path(__file__).parent / "data"
 @pytest.mark.parametrize(
     ("filepath", "expected_instructions"),
     [
+        (DATA_DIR / "empty_test.txt", []),
         (
             DATA_DIR / "test1.txt",
             [
-                Instruction(
-                    COMMANDS["D"],
-                ),
-                Instruction(
-                    COMMANDS["U"],
-                ),
+                Instruction(COMMANDS["D"]),
+                Instruction(COMMANDS["U"]),
+            ],
+        ),
+        (
+            DATA_DIR / "book_test.txt",
+            [
+                Instruction(COMMANDS["P"], 2),
+                Instruction(COMMANDS["D"]),
+                Instruction(COMMANDS["W"], 2),
+                Instruction(COMMANDS["N"], 1),
+                Instruction(COMMANDS["E"], 2),
+                Instruction(COMMANDS["S"], 1),
+                Instruction(COMMANDS["U"]),
             ],
         ),
     ],

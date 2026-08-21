@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from .instruction import Instruction
+from exercise4.instruction import Instruction
 
 
 @dataclass

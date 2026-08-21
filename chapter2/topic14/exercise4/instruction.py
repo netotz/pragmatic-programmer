@@ -1,4 +1,4 @@
-from .command import Command
+from exercise4.command import Command
 
 
 class Instruction:

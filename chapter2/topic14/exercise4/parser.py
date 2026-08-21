@@ -1,5 +1,5 @@
-from .command import Command
-from .instruction import Instruction
+from exercise4.command import Command
+from exercise4.instruction import Instruction
 
 COMMANDS = {
     "D": Command("D", "pen down", False),

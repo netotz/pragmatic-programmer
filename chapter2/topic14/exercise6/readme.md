@@ -1,0 +1,16 @@
+Content from [`time.bnf`](./time.bnf) file:
+
+```bnf
+<time> ::= <hours> <suffix> | <hours> ":" <minutes> | <hours> ":" <minutes> <suffix>
+
+<suffix> ::= "am" | "pm"
+
+<hours> ::= <hour-tens> <digits> | <digits>
+
+<minutes> ::= <minute-tens> <digits>
+
+<hour-tens> ::= 0:2
+<minute-tens> ::= 0:5
+
+<digits> ::= 0:9
+```

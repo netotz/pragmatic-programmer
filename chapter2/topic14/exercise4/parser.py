@@ -4,6 +4,11 @@ from .instruction import Instruction
 COMMANDS = {
     "D": Command("D", "pen down", False),
     "U": Command("U", "pen up", False),
+    "P": Command("P", "select pen", True),
+    "W": Command("W", "draw west", True),
+    "E": Command("E", "draw east", True),
+    "N": Command("N", "draw north", True),
+    "S": Command("S", "draw south", True),
     # ...
 }
 """

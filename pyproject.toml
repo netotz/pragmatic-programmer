@@ -1,0 +1,9 @@
+[tool.pytest.ini_options]
+pythonpath = [
+    "chapter2/topic14",
+]
+
+[tool.pyright]
+extraPaths = [
+    "chapter2/topic14",
+]

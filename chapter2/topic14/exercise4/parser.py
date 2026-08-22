@@ -80,3 +80,6 @@ def parse_file(filepath: str) -> list[Instruction]:
             instructions.append(instruction)
 
     return instructions
+
+
+# TODO: implement commands (exercise 5)
